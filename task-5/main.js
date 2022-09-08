@@ -4,6 +4,8 @@ prompt.start();
 
 prompt.get('input', function (err, result) {
   
-    // Write code here
-  
+let n = parseInt(result.input);
+
+
+
 });
