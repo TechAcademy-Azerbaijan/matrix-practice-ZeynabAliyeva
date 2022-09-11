@@ -7,4 +7,70 @@ let matrix = [
     [4, 5, 6, 7, 7]
 ]
 
-// Write code here. 
+let min = matrix[0][0];
+
+for(let i=0; i<matrix.length; i++){
+  const arr = matrix[i]
+  for(let j=0; j<arr.length; j++){
+    const element = arr[j]
+    if(element < min){
+      min = element;
+    }
+  }
+}
+for(let i=0; i<matrix.length; i++){
+  const arr = matrix[i]
+  for(let j=0; j<arr.length; j++){
+    const element = arr[j]
+    if(element === min){
+      console.log(i+1);
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// let min = matrix[0][0];
+
+// for (let i = 0; i < matrix.length; i++) {
+//   let arr = matrix[i];
+//   for (let j = 0; j < arr.length; j++) {
+//     const element = arr[j];
+//     if (element < min) {
+//       min = element;
+//     }
+//   }
+// }
+
+// for (let i = 0; i < matrix.length; i++) {
+//     let arr = matrix[i];
+//     for (let j = 0; j < arr.length; j++) {
+//       const element = arr[j];
+//       if (element === min) {
+//         console.log(i + 1);
+//       }
+//     }
+//   }
